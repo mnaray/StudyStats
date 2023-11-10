@@ -100,15 +100,19 @@ const config = {
                         ]
                     },
                     {
-                        title: "Socials",
+                        title: "GitHub Profiles",
                         items: [
                             {
-                                label: "GitHub Profile",
+                                label: "mnaray",
                                 href: "https://github.com/mnaray/"
                             },
                             {
-                                label: "LinkedIn Profile",
-                                href: "https://www.linkedin.com/in/marton-naray-9bb014212/"
+                                label: "Ellis Arn",
+                                href: "https://github.com/EllisArn/"
+                            },
+                            {
+                                label: "n¿co",
+                                href: "https://github.com/h0peRL/"
                             }
                         ]
                     },
