@@ -14,10 +14,12 @@
         "ecmaVersion": "latest",
         "sourceType": "module"
     },
-    "plugins": ["@typescript-eslint", "react"],
-    "ignorePatterns": ["babel.config.js", "metro.config.js"],
+    "plugins": ["@typescript-eslint", "react", "@stylistic/js"],
     "rules": {
         "no-undef": "off",
+        "@stylistic/js/indent": ["error", 4],
+        "@stylistic/js/quotes": ["error", "double"],
+        "@stylistic/js/semi": ["error", "always"],
         "react/react-in-jsx-scope": "off",
         "react/jsx-uses-react": "off",
         "react/no-unescaped-entities": "off"
