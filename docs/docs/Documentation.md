@@ -113,6 +113,26 @@ Hier sind alle Quellen aufgelistet, welche während dem Aublauf des Projekts als
 
 ### Wireframes
 
-#### Seite 1
+These are the wireframes we came up with for the app. As they are only used for orientation when creating the frontend they are likely not going to make it into production the way they are seen here. Some minor changes and adjustments are to be expected.
 
-#### Seite 2
+#### Overview
+
+![](assets/20231128_145311_overwiev_full.jpg)
+
+![](assets/20231128_145416_overview_pages.jpg)
+
+#### Homepage
+
+![](assets/20231128_145431_homepage.jpg)
+
+![](assets/20231128_145646_new_entry_view.jpg)
+
+#### Subjects
+
+![](assets/20231128_145443_subjects_page.jpg)
+
+#### All Tests
+
+![](assets/20231128_145456_all_tests_page.jpg)
+
+![](assets/20231128_145602_detailed_test_view.jpg)
