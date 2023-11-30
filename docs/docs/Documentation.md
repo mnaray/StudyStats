@@ -28,22 +28,22 @@ This project aims to deepen our knowledge in Module 335: Mobile Application Real
 
 The following table outlines the requirements for the project.
 
-| Req. No. | Must/Can | Func./Qual./Rand. | Requirement                                                                             |
-| -------- | -------- | ----------------- | --------------------------------------------------------------------------------------- |
-| 1        | Must     | Functional        | The app must run on multiple platforms (React Native and TS).                           |
-| 2        | Must     | Functional        | Data will be stored in the cloud.                                                       |
-| 3        | Must     | Functional        | Authentication will be done using MS OAuth.                                             |
-| 4        | Must     | Rand              | The user can log in via the UI and middleware.                                          |
-| 5        | Must     | Rand              | The user can create subjects via the UI.                                                |
-| 6        | Must     | Rand              | The user can insert grades via the UI.                                                  |
-| 7        | Can      | Rand              | The user can upload an image of their test with an upload button in the UI.             |
-| 8        | Must     | Rand              | A grade average will be calculated and displayed in the UI.                             |
-| 9        | Must     | Rand              | The UI has three fields at the bottom to switch tabs.                                   |
-| 10       | Must     | Rand              | The UI has a logo.                                                                      |
-| 11       | Must     | Rand              | The UI of the homepage displays subjects with their respective averages.                |
-| 12       | Must     | Rand              | The UI of the subjects page displays subjects with their respective grades and weights. |
-| 13       | Must     | Rand              | The UI of the subjects page allows editing subjects and grades using CRUD.              |
-| 14       | Can      | Rand              | The user can specify how grades are weighted via the UI.                                |
+| Req. No. | Mandatory/Optional | Func./Qual./Margin. | Requirement                                                                             |
+| -------- | ------------------ | ------------------- | --------------------------------------------------------------------------------------- |
+| 1        | Mandatory          | Functional          | The app must run on multiple platforms (React Native and TS).                           |
+| 2        | Mandatory          | Functional          | Data will be stored in the cloud.                                                       |
+| 3        | Mandatory          | Functional          | Authentication will be done using MS OAuth.                                             |
+| 4        | Mandatory          | Margin              | The user can log in via the UI and middleware.                                          |
+| 5        | Mandatory          | Margin              | The user can create subjects via the UI.                                                |
+| 6        | Mandatory          | Margin              | The user can insert grades via the UI.                                                  |
+| 7        | Optional           | Margin              | The user can upload an image of their test with an upload button in the UI.             |
+| 8        | Mandatory          | Margin              | A grade average will be calculated and displayed in the UI.                             |
+| 9        | Mandatory          | Margin              | The UI has three fields at the bottom to switch tabs.                                   |
+| 10       | Mandatory          | Margin              | The UI has a logo.                                                                      |
+| 11       | Mandatory          | Margin              | The UI of the homepage displays subjects with their respective averages.                |
+| 12       | Mandatory          | Margin              | The UI of the subjects page displays subjects with their respective grades and weights. |
+| 13       | Mandatory          | Margin              | The UI of the subjects page allows editing subjects and grades using CRUD.              |
+| 14       | Optional           | Margin              | The user can specify how grades are weighted via the UI.                                |
 
 ### Technologies
 
