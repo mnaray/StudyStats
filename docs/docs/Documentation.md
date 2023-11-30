@@ -2,114 +2,112 @@
 sidebar_position: 1
 title: Documentation
 ---
-:::note
-Dies ist die Dokumentation des Projekts. Sie wurde nach IPERKA umgesetzt. Es wird der Ablauf und die Vorgehensweise des ganzen Projekts dokumentiert.
 
-In diesem Projekt erstellen wir eine kleine React Native multiplatform App. Mit StudyStats soll man seine Noten tracken und managen können um damit seine Noten im Überblick zu haben. Unser Fokus liegt dabei auf das Arbeiten mit React Native.
+:::note
+This is the documentation of the project. It has been implemented using IPERKA. It documents the process and approach of the entire project.
+
+In this project, we are creating a small React Native multiplatform app. StudyStats allows users to track and manage their grades to have an overview of their academic performance. Our focus is on working with React Native.
 
 :::
 
-## Informieren
+## Inform
 
-In diesem Kapitel der Dokumentation wird die Phase festgehalten, in welcher wir uns über alles Nötige informieren. Dazu gehören die Anforderungen und die Auflistung [**aller verwendeten Quellen**](#quellen).
+This section of the documentation captures the phase in which we gather all necessary information. This includes requirements and the listing of [**all used sources**](#sources).
 
-### Was versteht man unter React Native?
+### Understanding React Native
 
-React Native ist ein Open-Source-Framework, das es Entwicklern ermöglicht, mobile Anwendungen für iOS und Android mit JavaScript und React zu erstellen. React Native nutzt die gleiche React-Syntax, die auch für Webanwendungen verwendet wird, um Benutzeroberflächen zu erstellen. Der große Vorteil besteht darin, dass Entwickler mit React Native plattformübergreifende mobile Apps schreiben können, während sie den Großteil des Codes zwischen den verschiedenen Plattformen teilen können
+React Native is an open-source framework that enables developers to create mobile applications for iOS and Android using JavaScript and React. React Native uses the same React syntax used for web applications to build user interfaces. The significant advantage is that developers can write cross-platform mobile apps with React Native, sharing the majority of the code between different platforms.
 
-### Was ist unser Ziel?
+### Our Goal
 
-In diesem Projekt unser Ziel, eine einfache, funktionsfähige Notenapp zu entwickeln, mit der man seine Noten managen kann. Dabei liegt unser ziel auf das entwickeln einer **multiplattform** App.
+The goal of this project is to develop a simple, functional grade management app. Our focus is on creating a **multiplatform** app.
 
-Damit wollen wir unsere Kenntnisse in dem Modul 335: Mobile-Applikation realisieren vertiefen und uns auf die kommende Bewertung vorbereiten.
+This project aims to deepen our knowledge in Module 335: Mobile Application Realization and prepare for the upcoming evaluation.
 
-### Anforderungen
+### Requirements
 
-In der folgenden Tabelle sind die Anforderungen für das Projekt.
+The following table outlines the requirements for the project.
 
+| Req. No. | Must/Can | Func./Qual./Rand. | Requirement                                                                             |
+| -------- | -------- | ----------------- | --------------------------------------------------------------------------------------- |
+| 1        | Must     | Functional        | The app must run on multiple platforms (React Native and TS).                           |
+| 2        | Must     | Functional        | Data will be stored in the cloud.                                                       |
+| 3        | Must     | Functional        | Authentication will be done using MS OAuth.                                             |
+| 4        | Must     | Rand              | The user can log in via the UI and middleware.                                          |
+| 5        | Must     | Rand              | The user can create subjects via the UI.                                                |
+| 6        | Must     | Rand              | The user can insert grades via the UI.                                                  |
+| 7        | Can      | Rand              | The user can upload an image of their test with an upload button in the UI.             |
+| 8        | Must     | Rand              | A grade average will be calculated and displayed in the UI.                             |
+| 9        | Must     | Rand              | The UI has three fields at the bottom to switch tabs.                                   |
+| 10       | Must     | Rand              | The UI has a logo.                                                                      |
+| 11       | Must     | Rand              | The UI of the homepage displays subjects with their respective averages.                |
+| 12       | Must     | Rand              | The UI of the subjects page displays subjects with their respective grades and weights. |
+| 13       | Must     | Rand              | The UI of the subjects page allows editing subjects and grades using CRUD.              |
+| 14       | Can      | Rand              | The user can specify how grades are weighted via the UI.                                |
 
-| Anf. Nr. | Muss/Kann | Funk./Qual./Rand. | Anforderung                                                                                             |
-| ---------- | ----------- | ------------------- | --------------------------------------------------------------------------------------------------------- |
-| 1        | Muss      | Funktional        | Die App muss auf mehreren Platformen laufen(React Native und TS).                                       |
-| 2        | Muss      | Funktional        | Die Daten werden in der Cloud gespeichert.                                                              |
-| 3        | Muss      | Funktional        | Die Authentifizierung erfolgt mit MS OAuth.                                                             |
-| 4        | Muss      | Rand              | Der Benutzer kann sich über das UI und die Middleware einloggen.                                       |
-| 5        | Muss      | Rand              | Der Benutzer kann Fächer über das UI erstellen.                                                       |
-| 6        | Muss      | Rand              | Der Benutzer kann Noten über das UI einfügen.                                                         |
-| 7        | Kann      | Rand              | Man kann ein Bild seiner Prüfung hochladen. Mit einem Upload button übder das UI                      |
-| 8        | Muss      | Rand              | Es wird ein Notenschnitt berechnet und im UI asugegeben.                                                |
-| 9        | Muss      | Rand              | Das Ui besitzt unten zwei Felder, um die Tabs zu wechseln.                                              |
-| 10       | Muss      | Rand              | Das UI besitzt ein Logo.                                                                                |
-| 11       | Muss      | Rand              | Das UI der Startseite hat eine Ausgabe von den Fächern mit dem jeweiligen Durchschnit.                 |
-| 12       | Muss      | Rand              | Das UI der Fächerpage hat eine Ausgabe von den Fächern mit den jeweiligen Noten und deren Gewichtung. |
-| 13       | Muss      | Rand              | Das UI der Fächerpage ermöglichte es Fächer und Noten nach CRUD zu bearbeiten.                       |
-| 14       | Kann      | Rand              | Der Benutzer kann über das UI ageben, wie die Noten gewichtet werden.                                  |
+### Technologies
 
-### Technologien
+For this project, we used the following technologies:
 
-Für dieses Projekt haben wir folgende Technologien verwendet:
+-   [Deta Space](https://deta.space)
+-   [GitHub](https://github.com)
+-   [Node](https://www.npmjs.com/)
+-   [MS OAuth](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-auth-code-flow)
+-   [ESLint](https://eslint.org/)
+-   [Prettier](https://prettier.io/)
+-   [React Native](https://reactnative.dev)
 
-- [Deta Space](https://deta.space)
-- [GitHub](https://github.com)
-- [Node](https://www.npmjs.com/)
-- [MS OAuth](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-auth-code-flow)
-- [ESLint](https://eslint.org/)
-- [Prettier](https://prettier.io/)
-- [React Native](https://reactnative.dev)
+### Sources
 
-### Quellen
+Here are all the sources that were used as help or orientation during the project.
 
-Hier sind alle Quellen aufgelistet, welche während dem Aublauf des Projekts als Hilfe oder Orientation verwendet wurden.
+-   [Deta Space Dokumentation](https://deta.space/docs/en)
+-   [GitHub Actions Dokumentation](https://docs.github.com/de/actions)
+-   [React Native](https://reactnative.dev/docs/getting-started)
 
-- [Deta Space Dokumentation](https://deta.space/docs/en)
-- [GitHub Actions Dokumentation](https://docs.github.com/de/actions)
-- [React Native](https://reactnative.dev/docs/getting-started)
+## Plan
 
-## Planen
+### Work Packages
 
-### Arbeitspakete
-
-
-| Nr. | Frist      | Beschreibung | Geplante Zeit in Paketen |
-| ----- | ------------ | :------------- | -------------------------- |
-| 1   | 9.11.2023  |              |                          |
-| 2   | 16.11.2023 |              |                          |
-| 3   | 23.11.2023 |              |                          |
-| 4   | 30.11.2023 |              |                          |
-| 5   |            |              |                          |
-| 6   |            |              |                          |
-| 7   |            |              |                          |
+| No. | Deadline   | Description | Planned Time in Packages |
+| --- | ---------- | :---------- | ------------------------ |
+| 1   | 9.11.2023  |             |                          |
+| 2   | 16.11.2023 |             |                          |
+| 3   | 23.11.2023 |             |                          |
+| 4   | 30.11.2023 |             |                          |
+| 5   |            |             |                          |
+| 6   |            |             |                          |
+| 7   |            |             |                          |
 
 :::info
 
-1x Arbeitspaket = 45 Minuten = 1x Schullektion
+1x work package = 45 minutes = 1x school lesson
 
-1x Halbtag = 5x Arbeitspakete
+1x half-day = 5x work packages
 
 :::
 
-### Testfälle
+### Test Cases
 
+| Test<br />No. | Req.<br />No. | Preconditions | Test Environment | Input/Action | Expected Output |
+| ------------- | ------------- | ------------- | ---------------- | ------------ | --------------- |
+| 1.1           |               |               |                  |              |                 |
+| 2.1           |               |               |                  |              |                 |
 
-| Testf.<br />Nr. | Anf.<br />Nr. | Voraussetzungen | Testumgebung | Eingabe/Aktion | Erw. Ausgabe |
-| ----------------- | --------------- | ----------------- | -------------- | ---------------- | -------------- |
-| 1.1             |               |                 |              |                |              |
-| 2.1             |               |                 |              |                |              |
+#### Test Environments
 
-#### Testumgebungen
-
-* Visual Studio Code (VSC)
-  * Version: 1.78.2 (user setup)
-  * Commit: b3e4e68a0bc097f0ae7907b217c1119af9e03435
-  * Date: 2023-05-10T14:39:26.248Z
-  * Electron: 22.5.2
-  * Chromium: 108.0.5359.215
-  * Node.js: 16.17.1
-  * V8: 10.8.168.25-electron.0
-  * OS: Windows_NT x64 10.0.19045
-  * Sandboxed: Yes
-* Chrome (für PDFs und Dokumentation)
-  * Version: 114.0.5735.134 (Official Build) (64-bit)
+-   Visual Studio Code (VSC)
+    -   Version: 1.78.2 (user setup)
+    -   Commit: b3e4e68a0bc097f0ae7907b217c1119af9e03435
+    -   Date: 2023-05-10T14:39:26.248Z
+    -   Electron: 22.5.2
+    -   Chromium: 108.0.5359.215
+    -   Node.js: 16.17.1
+    -   V8: 10.8.168.25-electron.0
+    -   OS: Windows_NT x64 10.0.19045
+    -   Sandboxed: Yes
+-   Chrome (for PDFs and documentation)
+    -   Version: 114.0.5735.134 (Official Build) (64-bit)
 
 ### Wireframes
 
