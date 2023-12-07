@@ -4,7 +4,12 @@ import { Text, View } from "../../components/Themed";
 export default function SignUp() {
     return (
         <View style={styles.container}>
-            <Text style={styles.title}>No login yet? Sign Up now!s</Text>
+            <Text style={styles.title}>No login yet? Sign Up now!</Text>
+            <View
+                style={styles.separator}
+                lightColor="#eee"
+                darkColor="rgba(255,255,255,0.3)"
+            />
         </View>
     );
 }
