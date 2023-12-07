@@ -4,6 +4,9 @@ import { Pressable, useColorScheme } from "react-native";
 
 import Colors from "../../constants/Colors";
 
+/**
+ * You can explore the built-in icon families and icons on the web at https://icons.expo.fyi/
+ */
 function TabBarIcon(props: {
     name: React.ComponentProps<typeof FontAwesome>["name"];
     color: string;
@@ -21,11 +24,11 @@ export default function TabLayout() {
             }}
         >
             <Tabs.Screen
-                name="index"
+                name="Login"
                 options={{
-                    title: "Home",
+                    title: "Login",
                     tabBarIcon: ({ color }) => (
-                        <TabBarIcon name="home" color={color} />
+                        <TabBarIcon name="code" color={color} />
                     ),
                     headerRight: () => (
                         <Link href="/modal" asChild>
@@ -49,20 +52,11 @@ export default function TabLayout() {
                 }}
             />
             <Tabs.Screen
-                name="Subjects"
+                name="SignUp"
                 options={{
-                    title: "Subjects",
+                    title: "SignUp",
                     tabBarIcon: ({ color }) => (
-                        <TabBarIcon name="book" color={color} />
-                    ),
-                }}
-            />
-            <Tabs.Screen
-                name="AllTests"
-                options={{
-                    title: "All Tests",
-                    tabBarIcon: ({ color }) => (
-                        <TabBarIcon name="list-alt" color={color} />
+                        <TabBarIcon name="code" color={color} />
                     ),
                 }}
             />
