@@ -1,6 +1,7 @@
-import { StyleSheet, TouchableOpacity } from "react-native";
+import { Pressable, StyleSheet, TouchableOpacity } from "react-native";
 import { Text, View } from "../../components/Themed";
 import { useAuth } from "../../context/AuthProvider";
+import { useAuth0, Auth0Provider } from "react-native-auth0";
 
 export default function Login() {
     const { setUser } = useAuth();
@@ -9,6 +10,19 @@ export default function Login() {
         setUser({
             name: "John Doe",
         });
+    };
+    const LoginButton = () => {
+        const { authorize } = useAuth0();
+
+        const onPress = async () => {
+            try {
+                await authorize();
+            } catch (e) {
+                console.log(e);
+            }
+        };
+
+        return <Pressable onPress={onPress}></Pressable>;
     };
     return (
         <View style={styles.container}>
@@ -20,9 +34,7 @@ export default function Login() {
                 lightColor="#eee"
                 darkColor="rgba(255,255,255,0.3)"
             />
-            <TouchableOpacity style={styles.login} onPress={login}>
-                <Text>Login</Text>
-            </TouchableOpacity>
+            <LoginButton />
         </View>
     );
 }

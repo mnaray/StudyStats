@@ -9,6 +9,7 @@ import { useFonts } from "expo-font";
 import { SplashScreen, Stack } from "expo-router";
 import { useEffect } from "react";
 import { useColorScheme } from "react-native";
+import { useAuth0, Auth0Provider } from "react-native-auth0";
 
 export {
     // Catch any errors thrown by the Layout component.
@@ -54,7 +55,10 @@ function RootLayoutNav() {
         <ThemeProvider
             value={colorScheme === "dark" ? DarkTheme : DefaultTheme}
         >
-            <AuthProvider>
+            <Auth0Provider
+                domain={"studystats.eu.auth0.com"}
+                clientId={"Jo9pkPrsxf2bkxvhOC0RKReXGOlXCUkb"}
+            >
                 <Stack>
                     <Stack.Screen
                         name="(tabs)"
@@ -69,7 +73,7 @@ function RootLayoutNav() {
                         }}
                     />
                 </Stack>
-            </AuthProvider>
+            </Auth0Provider>
         </ThemeProvider>
     );
 }

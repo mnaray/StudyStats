@@ -1,12 +1,30 @@
-import { StyleSheet } from "react-native";
-
+import { Pressable, StyleSheet } from "react-native";
 import EditScreenInfo from "../../components/EditScreenInfo";
 import { Text, View } from "../../components/Themed";
 import { TouchableOpacity } from "react-native-gesture-handler";
 import { useAuth } from "../../context/AuthProvider";
+import { useAuth0 } from "react-native-auth0";
 
 export default function TabOneScreen() {
     const { setUser } = useAuth();
+
+    const LogoutButton = () => {
+        const { clearSession } = useAuth0();
+
+        const onPress = async () => {
+            try {
+                await clearSession();
+            } catch (e) {
+                console.log(e);
+            }
+        };
+
+        return (
+            <Pressable onPress={onPress}>
+                <Text>Log out</Text>
+            </Pressable>
+        );
+    };
 
     return (
         <View style={styles.container}>
@@ -18,13 +36,8 @@ export default function TabOneScreen() {
                     darkColor="rgba(255,255,255,0.1)"
                 />
                 <EditScreenInfo path="app/(tabs)/index.tsx" />
-            </View>{" "}
-            <TouchableOpacity
-                style={styles.logout}
-                onPress={() => setUser(null)}
-            >
-                <Text>Log out</Text>
-            </TouchableOpacity>
+            </View>
+            <LogoutButton />
         </View>
     );
 }
