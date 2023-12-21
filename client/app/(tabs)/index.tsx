@@ -1,13 +1,9 @@
 import { Pressable, StyleSheet } from "react-native";
 import EditScreenInfo from "../../components/EditScreenInfo";
 import { Text, View } from "../../components/Themed";
-import { TouchableOpacity } from "react-native-gesture-handler";
-import { useAuth } from "../../context/AuthProvider";
 import { useAuth0 } from "react-native-auth0";
 
 export default function TabOneScreen() {
-    const { setUser } = useAuth();
-
     const LogoutButton = () => {
         const { clearSession } = useAuth0();
 
