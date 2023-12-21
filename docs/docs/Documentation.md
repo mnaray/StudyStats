@@ -75,7 +75,7 @@ Here are all the sources that were used as help or orientation during the projec
 | 2   | 9.11.2023  | Setup Documentation                 | 1 work package           |
 | 3   | 16.11.2023 | Requirements created                | 2 work package           |
 | 4   | 16.11.2023 | Technologies chosen                 | 1 work package           |
-| 5   | 16.11.2023 | Setup Cloundenvironment             | 3 work package           |
+| 5   | 16.11.2023 | Setup Cloudenvironment              | 3 work package           |
 | 6   | 16.11.2023 | Setup API                           | 3 work package           |
 | 7   | 16.11.2023 | Docs deployed                       | 1 work package           |
 | 8   | 16.11.2023 | CI/CD Setup                         | 2 work package           |
@@ -83,7 +83,7 @@ Here are all the sources that were used as help or orientation during the projec
 | 10  | 30.11.2023 | Mockups created                     | 1 work package           |
 | 11  | 30.11.2023 | Implemented auto format             | 2 work package           |
 | 12  | 30.11.2023 | Planned DB-Concept                  | 1 work package           |
-| 13  | 30.11.2023 | Research about OAtuh                | 1 work package           |
+| 13  | 30.11.2023 | Research about OAuth                | 1 work package           |
 | 14  | 7.11.2023  | Update Docs                         | 2 work package           |
 | 15  | 7.11.2023  | Translated Docs German --> English  | 2 work package           |
 | 16  | 14.11.2023 | Debugging Frontend                  | 2 work package           |
